@@ -141,3 +141,68 @@ using namespace std;
 //   obj.withdraw(20);
 //   obj.showBalance();
 // }
+// Write a c++ program to implement a class called student that has private member variables for name, class, roll number, and marks . Include member fuctiontot calculate the grade based on the marks and display the student's information
+
+// class student{
+//   private:
+//     string name, classes, roll_no;
+//     int maths, science, English;
+//     int total;
+//     string grade;
+
+//   public:
+//     void setGrade(string x, string y, string z, int a, int b, int c)
+//     {
+//        maths = a;
+//        science = b;
+//        English = c;
+//        name = x;
+//        classes = y;
+//        roll_no = z;
+//        total = (a + b + c);
+//        if(total >= 120)
+//        {
+//            grade = "A";
+//        }
+//        else if(total >= 100)
+//        {
+//            grade = "B";
+//        }
+//        else
+//        {
+//            grade = "Pass";
+//        }
+//     }
+
+//     void showResult()
+//     {
+//       cout << "\nName: " << name << "\nClass: " << classes << "\nRoll_no: " << roll_no<< "\nGrade: " << grade;
+//     }
+// };
+// int main()
+// {
+//   student obj;
+//   obj.setGrade("Modi", "X", "23MCI10169", 45,34,23);
+//   obj.showResult();
+// }
+
+
+// Write a c++ program to find the two repeating elements in a given array of integers
+
+int main()
+{
+  int arr[5] = {4,5,2,2,1};
+  int count = 0;
+  for(int i = 0; i< 5; i++)
+    {
+      for(int j = i + 1; j < 5; j++)
+        {
+            if(arr[i] == arr[j])
+            {
+                count = arr[i];
+            }
+        }
+    }
+    cout << "Repeating: " << count;
+}
+
